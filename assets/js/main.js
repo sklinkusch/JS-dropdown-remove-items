@@ -1,4 +1,5 @@
 function removecolor() {
-  let color = document.getElementById("colorSelect").value;
-  document.getElementById(`${color}`).style.display = "none";
+  const selectedOption = document.getElementById("colorSelect")
+    .selectedOptions[0];
+  selectedOption.style.display = "none";
 }
